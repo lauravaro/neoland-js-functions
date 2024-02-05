@@ -35,3 +35,21 @@ function average(param) {
 
 const result = average(numbers);
 console.log(result);
+
+// Iteración #5
+const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
+
+function averageWord(param) {
+  const sum = param.reduce((acc, cur) => {
+    if (typeof cur === 'number') {
+      return acc + cur;
+    } else if (typeof cur === 'string') {
+      return acc + cur.length;
+    }
+    return acc;
+  }, 0);
+  
+  return sum;
+}
+
+console.log(averageWord(mixedElements)); 
