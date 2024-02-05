@@ -92,3 +92,24 @@ const duplicates = [
 }
     console.log(finderName(nameFinder, 'Tony')); 
   
+
+// Iteración #8
+const counterWords = [
+    'code',
+    'repeat',
+    'eat',
+    'sleep',
+    'code',
+    'enjoy',
+    'sleep',
+    'code',
+    'enjoy',
+    'upgrade',
+    'code'
+  ];
+  function repeatCounter(param) {
+    function repeatCounter(param) { 
+        let count = {}; param.forEach(word => { 
+            if (count[word]) { count[word]++; } 
+            else { count[word] = 1; } })
+  }}
