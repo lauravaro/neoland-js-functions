@@ -72,3 +72,23 @@ const duplicates = [
     function removeDuplicates(arr) { const uniqueArr = [...new Set(arr)]; return uniqueArr; }
   }
   
+  // Iteración #7
+  const nameFinder = [
+    'Peter',
+    'Steve',
+    'Tony',
+    'Natasha',
+    'Clint',
+    'Logan',
+    'Xabier',
+    'Bruce',
+    'Peggy',
+    'Jessica',
+    'Marc'
+  ];
+  function finderName(param) {
+    function finderName(array, value){ for(let P = 0; P < array.length; P++)
+        { if(array[P] === value){ return [true, P]; } } return false; }
+}
+    console.log(finderName(nameFinder, 'Tony')); 
+  
